@@ -1,0 +1,175 @@
+
+<head>
+  <meta charset="utf-8">
+  <title>Новые мероприятия</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+
+
+{% block content %}
+
+
+<div class = "container">
+
+
+<div class = "row">
+<div class = "col-md-8">
+
+   <label >Ввод данных для нового прогноза </label>
+
+   <br>
+
+</div>
+</div>
+
+
+<div class = "row">
+<div class = "col-md-8">
+
+
+<form action="/enter_item" enctype="multipart/form-data" method="post">
+
+<table class="table table-striped table-hover">
+
+  <tr>
+     <td><label class="text-primary">Month: </label></td>
+     <td><input type="number" name="Month" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">Age: </label></td>
+     <td><input type="number" name="Age" size = 80 value="" requied/></td>
+  </tr>
+
+  <tr>
+     <td><label class="text-primary"> Occupation: </label></td>
+     <td><select name="Occupation">
+     <option value="0">Scientist</option>
+     <option value="1">NoOccupation</option>
+     <option value="2">Teacher</option>
+     <option value="3">Engineer</option>
+     <option value="4">Entrepreneur</option>
+     <option value="5">Developer</option>
+     <option value="6">Lawyer</option>
+     <option value="7">MediaManager</option>
+     <option value="8">Doctor</option>
+     <option value="9">Journalist</option>
+     <option value="10">Manager</option>
+     <option value="11">Accountant</option>
+     <option value="12">Musician</option>
+     <option value="13">Mechanic</option>
+     <option value="14">Writer</option>
+     <option value="15">Architect</option>
+        </select></td>
+  </tr>
+
+  <tr>
+     <td><label class="text-primary">AnnualIncome: </label></td>
+     <td><input type="number" name="AnnualIncome" size = 80 value="" requied/></td>
+  </tr>
+
+  <tr>
+     <td><label class="text-primary">MonthlyInhandSalary: </label></td>
+     <td><input type="number" name="MonthlyInhandSalary" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">NumBankAccounts: </label></td>
+     <td><input type="number" name="NumBankAccounts" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">NumCreditCard: </label></td>
+     <td><input type="number" name="NumCreditCard" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">InterestRate: </label></td>
+     <td><input type="number" name="InterestRate" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">NumofLoan: </label></td>
+     <td><input type="number" name="NumofLoan" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">Delayfromduedate: </label></td>
+     <td><input type="number" name="Delayfromduedate" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">NumofDelayedPayment: </label></td>
+     <td><input type="number" name="NumofDelayedPayment" size = 80 value="" requied/></td>
+  </tr>
+
+  <tr>
+     <td><label class="text-primary">NumCreditInquiries: </label></td>
+     <td><input type="number" name="NumCreditInquiries" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">CreditMix: </label></td>
+     <td><input type="number" name="CreditMix" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">OutstandingDebt: </label></td>
+     <td><input type="number" name="OutstandingDebt" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">CreditUtilizationRatio: </label></td>
+     <td><input type="number" name="CreditUtilizationRatio" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">PaymentofMinAmount: </label></td>
+     <td><input type="number" name="PaymentofMinAmount" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">TotalEMIpermonth: </label></td>
+     <td><input type="number" name="TotalEMIpermonth" size = 80 value="" requied/></td>
+  </tr>
+
+
+  <tr>
+     <td><label class="text-primary"> PaymentBehaviour: </label></td>
+     <td><select name="PaymentBehaviour">
+     <option value="0">HighspentSmallvaluepayments</option>
+     <option value="1">LowspentLargevaluepayments</option>
+     <option value="2">LowspentMediumvaluepayments</option>
+     <option value="3">LowspentSmallvaluepayments</option>
+     <option value="4">HighspentMediumvaluepayments</option>
+     <option value="5">NoPaymentBehaviour</option>
+     <option value="6">HighspentLargevaluepayments</option>
+        </select></td>
+  </tr>
+
+  <tr>
+     <td><label class="text-primary">MonthlyBalance: </label></td>
+     <td><input type="number" name="MonthlyBalance" size = 80 value="" requied/></td>
+  </tr>
+  <tr>
+     <td><label class="text-primary">CreditHistoryYears: </label></td>
+     <td><input type="number" name="CreditHistoryYears" size = 80 value="" requied/></td>
+  </tr>
+
+  <tr>
+     <td> </td>
+     <td align="right"> <input type="submit" class="btn btn-primary" value="Получить прогноз" /></td>
+  </tr>
+
+</table>
+</form>
+</div>
+</div>
+
+
+</div>
+
+<div class = "container text-danger">
+  {% for msg in get_flashed_messages() %}
+    <div>{{msg}}</div>
+  {% endfor %}
+</div>
+{% endblock content %}
