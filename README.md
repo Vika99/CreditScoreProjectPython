@@ -6,7 +6,7 @@ It is worth noting that traditional credit scoring algorithms work linearly, ana
 
 Machine learning systems are quite cost-effective in the long run. Once these models are built, they can be used over and over again for all uses of credit. Most scorecard-based credit scoring solution providers charge users on a per-user basis. At the same time, machine learning models are a fully customizable and constantly learning system that can meet all your credit scoring and customer profiling needs. For example, ML ensemble models can provide flexible ML-based credit scoring systems that can provide accurate eligibility prediction and intelligent ranking of borrowers to minimize the number of potentially bad loans.
 
-The available dataset was used from Kaggle that relates to a person’s credit-related information. The raw data includes information on 10,000 clients with 27 features. Below is the description of each column.
+The available dataset was used from Kaggle (link: https://www.kaggle.com/datasets/parisrohan/credit-score-classification) that relates to a person’s credit-related information. The raw data includes information on 10,000 clients with 27 features. Below is the description of each column.
 
 ID: Represents a unique identification of an entry;
 Customer_ID: Represents a unique identification of a person;
